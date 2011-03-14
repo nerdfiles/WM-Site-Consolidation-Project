@@ -1,17 +1,17 @@
 ;(function($, window) {
     
     var document = window.document,
-    	_config = {
-    		debugMode: true
-    	};
+        _config = {
+            debugMode: true
+        };
     
     /*
     if ( (typeof(window.console === "undefined") || typeof(window.console.log == "undefined")) ) {
         var console = {};
         console.note = function(o) {
-        	if (_config.debugMode) {
-        		console.log(o);
-        	}
+            if (_config.debugMode) {
+                console.log(o);
+            }
         };
     }
     */
@@ -19,9 +19,9 @@
     $.tabs = function(c, _params) {
     
         var $self = $(c),
-        	
-        	// internal defaults (test defaults);
-        	_defaults = { 
+            
+            // internal defaults (test defaults);
+            _defaults = { 
                 // debug mode
                 debugMode: _config.debugMode,
                 // adjust height of <dd> container
@@ -46,41 +46,41 @@
                 fadeContentSpeed: 500,
                 headersSelector: 'strong',
                 urlActiveElementName: 'activeElement'
-   			},
-   			
-   			// internal settings
-   			_settings = (_params)
-   			            ? (function(_params) { 
-   							_params['settingsType'] = 'arg-param';
-   							return _params;
-   						})(_params) 
-   					    : (function(_defaults) { 
-   							_defaults['settingsType'] = 'def';
-   							return _defaults;
-   						})(_defaults);
-   			
-   		if (typeof($self.attr('data-settings')) === 'undefined' 
-   			|| (typeof($self.attr('data-settings')) === 'string' 
-   				&& String($self.attr('data-settings')) === '' )) {
-   				
-   			$self.data('data-settings', _settings);
-   			
-   			// setting to var on element from [arg-param] (if present) or [def]
-   			// if metadata on element exists, override these
-   			
-   		}
+               },
+               
+               // internal settings
+               _settings = (_params)
+                           ? (function(_params) { 
+                               _params['settingsType'] = 'arg-param';
+                               return _params;
+                           })(_params) 
+                           : (function(_defaults) { 
+                               _defaults['settingsType'] = 'def';
+                               return _defaults;
+                           })(_defaults);
+               
+           if (typeof($self.attr('data-settings')) === 'undefined' 
+               || (typeof($self.attr('data-settings')) === 'string' 
+                   && String($self.attr('data-settings')) === '' )) {
+                   
+               $self.data('data-settings', _settings);
+               
+               // setting to var on element from [arg-param] (if present) or [def]
+               // if metadata on element exists, override these
+               
+           }
     
         return $self.each(function(index, e) {
 
             var $self = $(this),
                 _settings = ( (typeof($self.attr('data-settings')) === 'string' && $self.attr('data-settings') === '') 
                             || $self.attr('data-settings') === undefined )  
-            				? $self.data('data-settings') 
-            				: (function() {
-            					var em = $self.metadata({type:'attr', name:'data-settings'}) || $.parseJSON($self.attr('data-settings'));
-            					em['settingsType'] = 'elem';
-            					return em;
-            				}()), // be sure to check if specific properties are on their respective elements, if not, then use _settings
+                            ? $self.data('data-settings') 
+                            : (function() {
+                                var em = $self.metadata({type:'attr', name:'data-settings'}) || $.parseJSON($self.attr('data-settings'));
+                                em['settingsType'] = 'elem';
+                                return em;
+                            }()), // be sure to check if specific properties are on their respective elements, if not, then use _settings
                 activeElement = ( _settings.activeElement-1 ),
                 _set_activeElement = ( _settings.activeElement && _settings.activeElement > 0 ),
                 _set_fixedHeight = _settings.fixedHeight,
@@ -133,7 +133,7 @@
 
             });
         
-       	});
+           });
         
     };
         
