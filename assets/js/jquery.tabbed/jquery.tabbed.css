@@ -1,0 +1,93 @@
+/* ======= Style 1 ======= */
+
+div.tabs.style-1 { 
+    margin: 10px 0 0 !important;
+    padding: 2px !important; 
+    background: #E0DED0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    /*border-bottom: 1px #C2BEA0 solid;*/ }
+div.tabs.style-1 .header { display: none; }
+
+div.tabs.style-1 div.body { display: none; }
+div.tabs.style-1 div.body.active { display: block; }
+
+div.tabs.style-1 div.tab-tabs .header {
+    display: inline-block; 
+    *zoom: 1; 
+    *display: inline;
+    text-shadow: 0 0 1px #ccc;
+    border: 1px #E0DED0 solid;
+    border-bottom: none;
+    background: none !important; 
+    padding: 5px 10px !important; 
+    margin: 0 5px -1px 0 !important; 
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer !important; 
+    color: #555; }
+
+div.tabs.style-1 div.tab-tabs .active:hover { color: #222; }
+div.tabs.style-1 div.tab-tabs .active {
+    border: 1px #C2BEA0 solid;
+    border-bottom: none;
+    background: #fff !important;
+    -webkit-box-shadow: 0px -1px .1em #ccc;
+    -moz-box-shadow: 0px -1px .1em #ccc;
+    box-shadow: 0px -1px .1em #ccc;
+    color: #222; }
+    
+div.tabs.style-1 div.tab-panes { 
+    background: #fff; 
+    border: 1px #C2BEA0 solid;
+    padding: 10px;
+    -webkit-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-right-radius: 5px; }
+    
+/* ======= Style 2 ======= */
+
+div.tabs.style-2 { 
+    margin: 10px 0 0 !important;
+    padding: 0 !important; 
+    /*border-bottom: 1px #C2BEA0 solid;*/ }
+div.tabs.style-2 .header { display: none; }
+
+div.tabs.style-2 div.body { display: none; }
+div.tabs.style-2 div.body.active { display: block; }
+
+div.tabs.style-2 div.tab-tabs .header {
+    display: inline-block; 
+    *zoom: 1; 
+    *display: inline;
+    text-shadow: 0 0 1px #ccc;
+    border-bottom: none;
+    background: none !important; 
+    padding: 0 !important; 
+    margin: 0 5px 0 0 !important; 
+    cursor: pointer !important; 
+    color: #063; 
+    font-size: 1.5em;
+    font-weight: normal; }
+    
+div.tabs.style-2 div.tab-tabs .header .sep { color: #ccc !important; }
+
+div.tabs.style-2 div.tab-tabs .active:hover { color: #222; }
+div.tabs.style-2 div.tab-tabs .active {
+    border-bottom: none;
+    background: #fff !important;
+    color: #222; }
+    
+div.tabs.style-2 div.tab-panes { 
+    background: #fff; }

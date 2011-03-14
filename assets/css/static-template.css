@@ -1,0 +1,254 @@
+/* CSS Document */
+body.no-search #mainnav{
+	width:100% !important;
+}
+body.no-search #header{
+	background-image:none !important;
+}
+body.no-search #topnav{
+	width:700px !important;
+}
+body.no-search #search_top{
+	display:none;
+}
+body.no-search #topnav ul li.noborder{
+	margin-right:2px !important;
+	padding-right:0px !important;
+	
+}
+#header{background-position:757px 0px}
+#header-separation{
+	border-bottom:10px solid #006A3C;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+#footer-static-template{
+	height:50px;
+}
+#footer-static-template ul li {
+	border-right:1px solid #CCCCCC;
+	font-size:12px;
+	padding:0 15px 0 0;
+	display:block;
+	float:left;
+	list-style:none outside none;
+	margin:20px 20px 0 0;
+}
+#footer-static-template ul li a{
+	color:#FFF;	
+	text-decoration:none;
+}
+#footer-static-template ul li a:hover{
+	text-decoration:underline;
+}
+#footer-static-template #copyright{
+	float:right;
+	color:#FFF;
+	font-size:12px;
+	margin:20px 0px 0px 0;
+}
+div.rich-media-block{
+	margin-top:10px;
+}
+#content .sitemap ul.vertical li{
+float: none;
+margin: 0 0 15px;
+}
+
+
+#header h1{
+	font-size:24px;
+	text-align:right;
+}
+
+   /* LEFT NAV 
+      #left_nav { padding:27px 0 0; }
+      #left_nav ul { border-bottom:1px solid #ccc; }
+
+      #left_nav ul li { border-top:1px solid #ccc; font-weight:bold; }
+      #left_nav ul li a { color:#222; display:block; margin:-25px 5px 1px 5px; font-weight:bold; text-transform:uppercase;  text-decoration:none; }
+      #left_nav ul li a.on { color:#222222; cursor:default; background:url('/assets/images/icons/icon_bullet_leftnav.gif') top left no-repeat; padding-left:2px; text-decoration:none; }
+      #left_nav ul li a.on:hover { text-decoration:none; }
+    
+
+
+      #left_nav ul li ul { border:none; }     
+      #left_nav ul li ul li { border:none; solid #ccc;}
+      #left_nav ul li ul li a {color:#063; display:block; margin:1px 5px 1px 5px; font-weight:bold; text-decoration:none; }
+      #left_nav ul li ul li a.on { margin-left:14px; }
+      #left_nav ul li ul li a.on:hover { text-decoration:none; }
+
+*/
+
+
+
+
+	#content h2 { font-size:18px; font-weight:normal; margin:14px 0 20px; color:#222222;  }
+	#content h3 { margin:20px 0 5px; }
+	#content p, #content ul, #content h2, #content h1 { margin-right:280px; } 
+	#content p { margin-bottom:5px; }
+	#content ul { font-size:12px; color:#222222; margin:0 0 15px 0; }
+	#content ul li { margin:0 0 8px 3px; padding:0 0 0 8px; background:url('/assets/images/icons/icon_bullet_defaultsub.gif') top left no-repeat; }
+	#content img { display:block; }
+	
+	#right_content { width:340px; float:right; border-left:20px solid #fff; border-bottom:20px solid #fff; }
+	#right_content img { display:block; }
+	#right_content ul { margin:0; }
+	#right_content ul li { font-size:12px; }
+	
+	#right_content .rightcontentpod { padding:15px; border-bottom:15px solid #fff; margin:0; background:none; }
+	#right_content .rightcontentpod a { padding:0 0 0 70px; }
+	#right_content .rightcontentpod a strong { margin:0 0 5px 0; color:#222222; }
+	#right_content .rightcontentpod a span { display:block; color:#063; font-weight:bold; margin:15px 0 0 0; }
+	#right_content .foundinthissection { border-top:2px solid #E0DED0; }
+
+
+/* ======= OVERRIDES ======= */
+
+.hide { display: none; }
+
+/* new clearfix */
+.clearfix:after,
+.tabbed:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix,
+* html .tabbed             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix,
+*:first-child+html .tabbed { zoom: 1; } /* IE7 */
+
+input { 
+	border: 1px #E0DED0 solid; 
+	padding: 4px 3px; }
+
+#header { 
+	border-bottom: 10px solid #006A3C; 
+	padding: 0 0 1em 0; 
+	margin: 0 10px 0 10px; }
+
+#content h1 { margin-bottom: .5em; margin-top: .2em; }
+#content ul { padding-bottom: 0; }
+#content { 
+	line-height: 1.5em;
+	/* The line-height should really be re-casted; the readability of WM.com is lacking */
+	padding-bottom: 2em;
+	}
+#content p,
+#content h1,
+#content h2,
+#content ul { margin-right: 0; }
+#content ul { margin-left: .5em; }
+#content ul li { 
+	padding: 0 0 0 1em; 
+	background: url(http://www.wm.com/_assets/images/icons/icon_bullet_defaultsub.gif) no-repeat .3em 0; }
+#content ol { list-style: decimal; margin-left: 2em; }
+#content ol li { }
+#content dl { margin: 1em 0 .5em; }
+#content dt { font-weight: bold; }
+#content dd { padding-left: 1em; }
+#content table { position: relative; margin: 1em 0 2.5em; width: 100%; border: 1px #E0DED0 solid; }
+#content table th { background: #E0DED0; padding: 4px; }
+#content table td { padding: 4px; border-bottom: 1px #E0DED0 solid; border-right: 1px #E0DED0 solid; }
+#content caption { font-size: .9em; color: #777; width: 100%; text-align: left; }
+
+#left_nav { padding-top: 35px; }
+#left_nav ul li a { }
+#left_nav ul li { padding: 0; }
+#left_nav li,
+#left_nav a,
+#left_nav ul { *zoom: 1; }
+#left_nav li ul li ul li a { 
+	margin: 17px 5px 17px 25px; 
+	*margin: 9px 5px 9px 25px !important; }
+#left_nav li ul li ul li a.on { *margin: 9px 5px 9px 14px !important; }
+
+#right_rail { padding-top: 17px; }
+#right_rail h3 { font-size: 12px; color: #222; }
+#right_rail p,
+.modal-window-container p { margin: 10px 0 10px; }
+#right_rail p:first-child,
+.modal-window-container p:first-child { margin-top: 0; }
+#right_rail p:last-child,
+.modal-window-container p:last-child { margin-bottom: 0; }
+#right_rail ul { margin-right: 0; }
+#right_rail ul { margin-left: .5em; }
+#right_rail ul li { 
+	padding: 0 0 0 1em; 
+	margin: 0 0 8px 3px;
+	background: url(http://www.wm.com/_assets/images/icons/icon_bullet_defaultsub.gif) no-repeat .3em 0; }
+
+.module { margin-bottom: 1em; }
+.module h3 { padding: 5px 5px 7px; font-size: 16px; }
+.module .module-inner { 
+	border: 2px #E0DED0 solid; 
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px; }
+.module .module-header { background: #E0DED0; }
+.module .module-content { padding: 5px; }
+
+.module-type-text {}
+
+.module-contact-info { }
+.module-contact-info dd { margin: 0; padding: 0;  }
+
+.align-left { float: left; margin: 0 1em 1em 0; }
+.align-right { float: right; margin: 0 0 1em 1em; }
+
+sup { vertical-align: super; font-size: .9em; }
+sub { vertical-align: sub; font-size: .9em; }
+abbr { border-bottom: 1px #222 dotted; }
+
+#breadcrumb { margin: 15px 0 5px; }
+#breadcrumb li { display: inline; }
+#breadcrumb a { text-decoration: none; }
+#breadcrumb a:visited { }
+#breadcrumb a:hover { }
+#breadcrumb a:active { }
+
+ul.years { margin: 10px 0 15px !important; padding: 0 !important; font-size: 1.5em !important; }
+ul.years a { text-decoration: none; }
+ul.years li { background: none !important; margin: 0 !important; padding: 0 !important; display: inline; }
+ul.years span.sep { color: #ccc; }
+
+.modal-window-container h2 { font-size: 33px; color: #555; margin: 0 10px 10px 10px; }
+.modal-window-container .modal-window-container-inner { margin: 10px; height: 75%; overflow-y: auto; }
+
+
+/* ======= Module Link List ======= */
+
+.module-link-list dt a { color: #000; text-decoration: none; }
+.module-link-list dt a:hover { color: #00693c; text-decoration: none; }
+.module-link-list dd { padding-left: 0 !important; }
+.module-link-list dd p { margin-top: .25em !important; }
+.module-link-list a.more_links { font-weight: bold; }
+
+
+/* ======= FAQ ======= */
+
+.faq-toggle-list { margin: 15px 0 !important; }
+
+.faq-toggle-list dt,
+.faq-toggle-list dd { clear: left; }
+
+.faq-toggle-list dd p { margin: 10px 0 15px !important; }
+
+.faq-toggle-list dt { 
+    font-weight: bold; 
+    cursor: pointer; 
+    color:#006A3C; 
+    text-decoration:underline; } /*kf*/
+.faq-toggle-list dd { 
+    padding: 0 !important;
+    display: none; }
+.faq-toggle-list dd div { }
+.toggle-next {
+        background: url(http://www.wm.com/_assets/images/icons/icon_faqs_plusminus.gif) 0 3px no-repeat;
+        padding: 0 0 0 14px; }
+.toggle-next-active { background-position: 0 -88px; }
+.faq-toggle-list .faq-answer-container { }

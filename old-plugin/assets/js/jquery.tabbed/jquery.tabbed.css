@@ -1,0 +1,136 @@
+/* ======= Style 1 ======= */
+
+ul.tabs.style-1 { 
+    margin: 10px 0 0 !important;
+    padding: 6px 10px 0 !important; 
+    background: #E0DED0;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    /*border-bottom: 1px #C2BEA0 solid;*/ }
+ul.tabs.style-1 li { 
+    text-shadow: 0 0 1px #ccc;
+    border: 1px #E0DED0 solid;
+    border-bottom: none;
+    background: none !important; 
+    padding: 5px 10px !important; 
+    margin: 0 0 0 0 !important; 
+    display: inline-block; 
+    *zoom: 1; 
+    *display: inline;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer !important; 
+    color: #555; }
+ul.tabs.style-1 li:hover { color: #222; }
+ul.tabs.style-1 li.active {
+    border: 1px #C2BEA0 solid;
+    border-bottom: none;
+    background: #fff !important;
+    -webkit-box-shadow: 0px -1px .1em #ccc;
+    -moz-box-shadow: 0px -1px .1em #ccc;
+    box-shadow: 0px -1px .1em #ccc;
+    color: #222; }
+div.panes.style-1 { 
+    margin-bottom: 1.5em;
+    /* set up multiple styles */
+    /* height: 300px; */ }
+div.panes.style-1 div { 
+    display: none; 
+    min-height: 10px; 
+    padding: 10px 10px 0 10px; 
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; }
+div.panes.style-1 div.active { display: block; border: 2px #E0DED0 solid; border-top: none; }
+div.panes.style-1 div p { margin: 0 0 10px 0 !important; }
+
+
+/* ======= Style 2 ======= */
+
+ul.tabs.style-2 { 
+    margin: 10px 0 10px !important;
+    padding: 6px 5px 0 !important; 
+    background: #fff;
+    border-bottom: 1px #C2BEA0 solid; }
+ul.tabs.style-2 li { 
+    text-shadow: 0 0 1px #ccc;
+    border: 1px #E0DED0 solid;
+    border-bottom: none;
+    background: none !important; 
+    padding: 5px 10px !important; 
+    margin: 0 0 -1px 0 !important; 
+    display: inline-block; 
+    *zoom: 1; 
+    *display: inline;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer !important; 
+    color: #555; }
+ul.tabs.style-2 li:hover { color: #222; }
+ul.tabs.style-2 li.active {
+    border: 1px #C2BEA0 solid;
+    border-bottom: none;
+    background: #fff !important;
+    color: #222; }
+div.panes.style-2 { 
+    padding: 0 10px;
+    border-bottom: 1px #C2BEA0 solid;
+    /* set up multiple styles */
+    /* height: 300px; */ }
+div.panes.style-2 div { display: none; min-height: 10px; }
+div.panes.style-2 div.active { display: block; }
+div.panes.style-2 div p { margin: 0 0 10px 0 !important; }
+
+/* ======= Style 3 ======= */
+
+ul.tabs.style-3 { 
+    margin: 10px 0 10px !important;
+    padding: 6px 5px 0 !important; 
+    background: #006a3c !important;
+    /*border-bottom: 1px #C2BEA0 solid;*/ }
+ul.tabs.style-3 li { 
+    text-shadow: 0 0 1px #ccc;
+    border: 1px #015b33 solid;
+    border-bottom: none;
+    background: none !important; 
+    padding: 5px 10px !important; 
+    margin: 0 0 0 0 !important; 
+    display: inline-block; 
+    *zoom: 1; 
+    *display: inline;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer !important; 
+    color: #fff;
+    opacity: .6; }
+ul.tabs.style-3 li:hover { 
+    color: #fff;
+    opacity: 1; }
+ul.tabs.style-3 li.active {
+    border: 1px #C2BEA0 solid;
+    border-bottom: none;
+    background: #fff !important;
+    color: #222;
+    opacity: 1; }
+div.panes.style-3 { 
+    padding: 0 10px;
+    /* set up multiple styles */
+    /* height: 300px; */ }
+div.panes.style-3 div { display: none; min-height: 10px; }
+div.panes.style-3 div.active { display: block; }
+div.panes.style-3 div p { margin: 0 0 10px 0 !important; }
