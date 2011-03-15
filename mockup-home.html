@@ -18,6 +18,7 @@
         <link rel="stylesheet" type="text/css" media="print" href="http://www.wm.com/_assets/css/print.css" />
         <link rel="stylesheet" type="text/css" media="all" href="assets/css/static-template.css" />
         <link rel="stylesheet" type="text/css" media="all" href="assets/js/jquery.tabbed/jquery.tabbed.css" />
+        <link rel="stylesheet" type="text/css" href="assets/js/shadowbox/shadowbox.css">
         
         <script type="text/javascript" src="http://www.wm.com/_assets/js/swfobject.js"></script>
         <script type="text/javascript" src="http://www.wm.com/_assets/js/cufon.js"></script>
@@ -73,10 +74,35 @@
                           </li>
                       </ul>
                   </div><!-- #left_nav -->
-              
+
+<!--
+
+/**
+ * Page Hero
+ *
+ * An approach to galleries for WM Site Consolidation 
+ * which uses Shadowbox with customzied CSS.
+ *
+ * @dependency          inline CSS
+ */
+
+-->
+
                   <div id="page_banner" class="grid_13">
                       <h1 style="height: 160px; background: url('http://www.wm.com/_assets/images/heros/hero_residentialproductsandservices_final.jpg') no-repeat; color: #fff; font-size: 33px; line-height: 33px; position: relative;"><span style="position: absolute; bottom: 18px; left: 24px;">Page Title</span></h1>
                   </div>
+
+<!--
+
+/**
+ * Breadcrumb
+ *
+ * A breadcrumb trial.
+ *
+ * @dependency          complex markup
+ */
+
+-->
 
                 <!--
                   <div id="page_meta" class="grid_9">
@@ -86,7 +112,7 @@
                           <li class="last-child"><span> > </span>Crumb</li>
                       </ul>
                   </div>
-                  -->
+                -->
 
                 <!--googleon: index-->
                 <div class="grid_9 clearfix" id="content">
@@ -94,10 +120,63 @@
                         <!-- div class="header">
                             <h1>Environmental Monitoring</h1>
                         </div class="header" -->
+                        
+<!--
+
+/**
+ * Header Blurb
+ *
+ * A fat header.
+ *
+ * @dependency          additional markup
+ */
+
+-->
+                        
                         <div class="header">
                             <h2>Porta dapibus. Vut, mauris pulvinar risus porta scelerisque ridiculus quis vut odio lectus rhoncus placerat vut, vut. Lundium cursus pellentesque, ultrices rhoncus!</h2>
                         </div>
+                        
                         <p><strong>Environmental</strong> <em>monitoring</em> <b>is</b> <i>an</i> <u>integral</u> <sup>part</sup> <sub>of</sub> <abbr title="facility">facility</abbr> operations at American Landfill. In <a href="mockup-page.html">general</a>, the environmental monitoring program includes:</p>
+                        
+<!--
+
+/**
+ * Gallery Implementation
+ *
+ * An approach to galleries for WM Site Consolidation 
+ * which uses Shadowbox with customzied CSS.
+ *
+ * @dependency          Shadowbox
+ */
+
+-->
+<!--
+                        <div class="gallery clearfix">
+                            <div class="gallery-image gallery-1 gallery-image-1 align-left">
+                                <a 
+                                    href="http://dummyimage.com/200x200/000/fff" 
+                                    rel="shadowbox[gallery-1];width=200;height=200" 
+                                    title="">
+                                    <img 
+                                        src="http://dummyimage.com/200x200/000/fff" 
+                                        height="200"
+                                        width="200" />
+                                </a>
+                            </div>
+                            <div class="gallery-image gallery-1 gallery-image-2 align-left">
+                                <a 
+                                    href="http://dummyimage.com/200x200/000/fff" 
+                                    rel="shadowbox[gallery-1];width=200;height=200" 
+                                    title="">
+                                    <img 
+                                        src="http://dummyimage.com/200x200/000/fff" 
+                                        height="200"
+                                        width="200" />
+                                </a>
+                            </div>
+                        </div>
+-->
                         <ul>
                             <li>Surface water monitoring </li>
                             <li>Groundwater monitoring </li>
@@ -109,6 +188,7 @@
                                 </ul>
                             </li>
                         </ul>
+                        
                         <img src="http://dummyimage.com/200x200/000/fff" height="200" width="200" class="align-left" />
                         <p>American Landfill utilizes highly trained and skilled professionals to perform the required environmental monitoring at the site.</p>
                         <h3>Surface Water Monitoring</h3>
@@ -274,8 +354,8 @@
         <div id="footer">
             <div class="container_16" id="footer-static-template">
                 <ul>
-                    <li><a id="pp_modal_trigger" href="http://www.wm.com/privacy-policy.jsp" class="modal_open:modal-privacy-policy">Privacy Policy</a></li>
-                    <li class="noborder"><a id="ln_modal_trigger" href="http://www.wm.com/legal-notice.jsp" class="modal_open:modal-legal-notice">Legal Notice</a></li>
+                    <li><a id="pp_modal_trigger" href="http://www.wm.com/privacy-policy.jsp">Privacy Policy</a></li>
+                    <li class="noborder"><a id="ln_modal_trigger" href="http://www.wm.com/legal-notice.jsp">Legal Notice</a></li>
                 </ul>
                 <div id="copyright">&copy; 2011 Waste Management, Inc.</div>
              </div><!-- #footer-static-template -->
@@ -294,6 +374,13 @@
         
         <!-- Other Libraries -->
         <script type="text/javascript" src="assets/js/modernizr-1.6.min.js"></script> 
+        <script type="text/javascript" src="assets/js/shadowbox/shadowbox.js"></script>
+        <script type="text/javascript">
+            Shadowbox.init({
+                language: 'en',
+                players: ['html', 'iframe']
+            });
+        </script>
         
         <!-- R1 Stack -->
         <!--
