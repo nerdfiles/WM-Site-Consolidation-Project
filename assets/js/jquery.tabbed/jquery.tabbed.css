@@ -1,6 +1,7 @@
 /* ======= Style 1 ======= */
 
 div.tabs.style-1 { 
+    clear: both;
     margin: 10px 0 0 !important;
     padding: 2px !important; 
     background: #E0DED0;
