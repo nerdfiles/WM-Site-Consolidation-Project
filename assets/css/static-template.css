@@ -137,6 +137,7 @@ input {
     line-height: 1.5em;
     /* The line-height should really be re-casted; the readability of WM.com is lacking */
     padding-bottom: 2em;
+    min-height: 40em;
     }
 #content p,
 #content h1,
@@ -156,7 +157,7 @@ input {
 #content table td { padding: 4px; border-bottom: 1px #E0DED0 solid; border-right: 1px #E0DED0 solid; }
 #content caption { font-size: .9em; color: #777; width: 100%; text-align: left; }
 
-#left_nav { padding-top: 35px; }
+#left_nav { padding-top: 35px; padding-bottom: 35px; }
 #left_nav ul li a { }
 #left_nav ul li { padding: 0; }
 #left_nav li,
