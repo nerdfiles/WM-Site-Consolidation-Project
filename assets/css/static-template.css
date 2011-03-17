@@ -231,7 +231,7 @@ ul.years span.sep { color: #ccc; }
 
 /* ======= FAQ ======= */
 
-.faq-toggle-list { margin: 15px 0 !important; }
+.faq-toggle-list { margin: 10px 0 15px !important; }
 
 .faq-toggle-list dt,
 .faq-toggle-list dd { clear: left; }
@@ -252,3 +252,18 @@ ul.years span.sep { color: #ccc; }
         padding: 0 0 0 14px; }
 .toggle-next-active { background-position: 0 -88px; }
 .faq-toggle-list .faq-answer-container { }
+
+div.faq-container { }
+div.faq-toolbar { margin: 0; padding: 0; text-align: right; }
+ul.faq-toolbar-inner { margin: 0 !important; padding: 0 !important; }
+div.faq-toolbar li { padding: 0 !important; margin: 0 !important; background: none !important; }
+
+@media print {
+
+    .faq-toolbar { display: none !important; }
+    .toggle-next { background: none !important; padding: 0 !important; }
+    .faq-toggle-list dd { 
+        display: block !important;
+    }
+    
+}
