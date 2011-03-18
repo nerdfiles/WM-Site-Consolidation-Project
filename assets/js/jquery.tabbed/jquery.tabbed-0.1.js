@@ -85,23 +85,23 @@
                 _set_activeElement = ( _settings.activeElement && _settings.activeElement > 0 ),
                 _set_fixedHeight = _settings.fixedHeight,
                 _set_maxHeight = ( _settings.height + _settings.adjustHeight ),
-                headerSelector = _settings.headersSelector + '.header',
-                $tabs = $self.find('.tab-tabs .header');
+                headerSelector = _settings.headersSelector + '.tabs-header',
+                $tabs = $self.find('.tab-tabs .tabs-header');
 
             // Construct tabs
 
             $self.append('<div class="tab-tabs"></div><div class="tab-panes"></div>');
             $self.find(headerSelector).prependTo($self.find('.tab-tabs'));
-            $self.find('div.body').appendTo($self.find('.tab-panes'));
+            $self.find('div.tabs-body').appendTo($self.find('.tab-panes'));
 
             // Check for hard-coded "active" settings
 
             if ( $self.find('.tab-tabs .active').length === 0 ) {
                 // @class="active" not set, prop set in _settings
                 
-                $self.find('.tab-tabs .header').not(':eq(' + activeElement + ')' ).removeClass('active');
-                $self.find('.tab-tabs .header').eq(activeElement).addClass('active');
-                $self.find('.tab-panes .body').eq(activeElement).addClass('active');
+                $self.find('.tab-tabs .tabs-header').not(':eq(' + activeElement + ')' ).removeClass('active');
+                $self.find('.tab-tabs .tabs-header').eq(activeElement).addClass('active');
+                $self.find('.tab-panes .tabs-body').eq(activeElement).addClass('active');
             }
 
             var loc = location.href,
@@ -109,19 +109,19 @@
                 _set_urlActiveElement = (loc.match(rx)) ? (parseInt(loc.match(rx)[1], 8) - 1) : null;
 
             if ( _settings.urlActiveElementName ) {
-                $self.find('.tab-tabs .header').not(':eq(' + _set_urlActiveElement + ')' ).removeClass('active');
-                $self.find('.tab-tabs .header').eq(_set_urlActiveElement).addClass('active');
-                $self.find('.tab-panes .body').removeClass('active');
-                $self.find('.tab-panes .body').eq(_set_urlActiveElement).addClass('active');
+                $self.find('.tab-tabs .tabs-header').not(':eq(' + _set_urlActiveElement + ')' ).removeClass('active');
+                $self.find('.tab-tabs .tabs-header').eq(_set_urlActiveElement).addClass('active');
+                $self.find('.tab-panes .tabs-body').removeClass('active');
+                $self.find('.tab-panes .tabs-body').eq(_set_urlActiveElement).addClass('active');
             }
 
             // Bind click
 
             $tabs.live('click', function(e) {
                 var $activeTab = $(this),
-                    $activePane = $activeTab.parent().next().find('.body').eq($activeTab.index()),
-                    $allTabs = $activeTab.parent().find('.header'),
-                    $allPanes = $activeTab.parent().next().find('.body');
+                    $activePane = $activeTab.parent().next().find('.tabs-body').eq($activeTab.index()),
+                    $allTabs = $activeTab.parent().find('.tabs-header'),
+                    $allPanes = $activeTab.parent().next().find('.tabs-body');
 
                 // clear all
                 $allTabs.removeClass('active');

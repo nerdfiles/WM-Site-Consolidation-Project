@@ -46,19 +46,23 @@ $(function() {
     });
     
     $(".toggle-all").bind("click", function(e) {
-        var state = 'hidden';
-        
-        if($(".toggle-next-active").length > 0) {
-            state = 'visible';
+    
+        var $self = $(this);
+            
+        if ( $self.hasClass('toggle-all-active') == false ) {
+            // show all
+            $self.closest('.faq-container').find('dd').slideDown();
+            $self.closest('.faq-container').find('dt').addClass('toggle-next-active');
+            $self.addClass('toggle-all-active');
+        } else {
+            // all hidden
+            $self.closest('.faq-container').find('dd').slideUp();
+            $self.closest('.faq-container').find('dt').removeClass('toggle-next-active');
+            $self.removeClass('toggle-all-active');
         }
         
-        $(".toggle-next").each(function(e) {
-            if($(this).next('dd').is(':' + state)) {
-                $(this).click();
-            }
-        });
-        
         e.preventDefault();
+        //return false;
     });
     
 });

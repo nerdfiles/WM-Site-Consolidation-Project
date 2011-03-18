@@ -18,7 +18,22 @@
         <link rel="stylesheet" type="text/css" media="print" href="http://www.wm.com/_assets/css/print.css" />
         <link rel="stylesheet" type="text/css" media="all" href="assets/css/static-template.css" />
         <link rel="stylesheet" type="text/css" media="all" href="assets/js/jquery.tabbed/jquery.tabbed.css" />
-        <link rel="stylesheet" type="text/css" href="assets/js/shadowbox/shadowbox.css">
+        <!--
+            link rel="stylesheet" type="text/css" href="assets/js/shadowbox/shadowbox.css"
+        -->
+        
+        <script type="text/javascript" src="assets/js/dynamicCSS.js"></script>
+        <script type="text/javascript">
+        if (document.getElementById) { // include all feature tests needed
+                                       // for your DOM script
+            createStyleRule("#el", "display:none;");
+            window.onload = myUnobtrusiveBehavior;
+        }
+        
+        function myUnobtrusiveBehavior() {
+            setElementStyleById("el", "display", "none"); // fallback for IE5/Mac
+            // ...
+        </script>
         
         <script type="text/javascript" src="http://www.wm.com/_assets/js/swfobject.js"></script>
         <script type="text/javascript" src="http://www.wm.com/_assets/js/cufon.js"></script>
@@ -38,7 +53,7 @@
                 <!--googleoff: index-->
 
                 <div class="grid_4" id="logo"> 
-                    <a id="wm_logo" href="/index.jsp"><span>Waste Management Home</span></a>  
+                    <a id="wm_logo" href="/index.jsp"><img src="http://www.wm.com/_assets/images/global/wastemanagement_logo.gif" alt="Waste Management" /></a>
                 </div><!-- #logo -->
             
             </div><!-- #div class="header" -->
@@ -368,19 +383,21 @@
         </script>
         
         <!-- jQuery, Plugins & Resources -->
-        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
         <script type="text/javascript" src="assets/js/jquery.metadata.js"></script>
         <script type="text/javascript" src="assets/js/jquery.tabbed/jquery.tabbed-0.1.js"></script>
         
         <!-- Other Libraries -->
         <script type="text/javascript" src="assets/js/modernizr-1.6.min.js"></script> 
-        <script type="text/javascript" src="assets/js/shadowbox/shadowbox.js"></script>
+        <!--
+            script type="text/javascript" src="assets/js/shadowbox/shadowbox.js"></script
         <script type="text/javascript">
             Shadowbox.init({
                 language: 'en',
                 players: ['html', 'iframe']
             });
-        </script>
+        </script
+        -->
         
         <!-- R1 Stack -->
         <!--

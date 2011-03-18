@@ -251,17 +251,25 @@ ul.years span.sep { color: #ccc; }
 .toggle-next {
         background: url(http://www.wm.com/_assets/images/icons/icon_faqs_plusminus.gif) 0 3px no-repeat;
         padding: 0 0 0 14px; }
+div.faq-header .toggle-all {
+        cursor: pointer; 
+        color:#006A3C; 
+        text-decoration:underline;
+        background: url(http://www.wm.com/_assets/images/icons/icon_faqs_plusminus.gif) 0 1px no-repeat;
+        padding: 0 0 0 14px; }
+div.faq-header .toggle-all-active { background-position: 0 -90px; }
 .toggle-next-active { background-position: 0 -88px; }
 .faq-toggle-list .faq-answer-container { }
 
 div.faq-container { }
-div.faq-toolbar { margin: 0; padding: 0; text-align: right; }
-ul.faq-toolbar-inner { margin: 0 !important; padding: 0 !important; }
-div.faq-toolbar li { padding: 0 !important; margin: 0 !important; background: none !important; }
+div.faq-header { border-bottom: 1px #ccc solid; margin: 0; padding: 2px 0; text-align: right; }
+ul.faq-header-inner { margin: 0 !important; padding: 0 !important; }
+div.faq-header li { padding: 0 !important; margin: 0 !important; background: none !important; }
+#content div.faq-header h3 { float: left; margin: 0; padding: 0; }
 
 @media print {
 
-    .faq-toolbar { display: none !important; }
+    .faq-header { display: none !important; }
     .toggle-next { background: none !important; padding: 0 !important; }
     .faq-toggle-list dd { 
         display: block !important;
