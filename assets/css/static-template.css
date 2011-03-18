@@ -102,12 +102,53 @@ margin: 0 0 15px;
     #right_content .rightcontentpod a span { display:block; color:#063; font-weight:bold; margin:15px 0 0 0; }
     #right_content .foundinthissection { border-top:2px solid #E0DED0; }
 
+/**
+ * @project             wm-redesign
+ * @inherited           wm-redesign-r1
+ */
 
-/* ======= OVERRIDES ======= */
+
+/**
+ * Utilities
+ *
+ * Utilities
+ *
+ * @author              aalexan1
+ * @project             wm-redesign
+ * @package             wm-redesign-r2
+ * @subpackage          site-consolidation
+ * @version             0.0.1
+ * @lastmodified        03-18-2011 1:40PM
+ *
+ * @css-for             all
+ * @tested              ie6,ie7,ie8,chrome_10.x,opera_11.x,firefox_3.6.x,safari_5.x,
+ * @valid               true
+ *
+ * @todo                Consolidate.
+ */
 
 .hide { display: none; }
 
-/* new clearfix */
+
+/**
+ * Clearfix
+ *
+ * Clearfix
+ *
+ * @author              aalexan1
+ * @project             wm-redesign
+ * @package             wm-redesign-r2
+ * @subpackage          site-consolidation
+ * @version             0.0.1
+ * @lastmodified        03-18-2011 1:40PM
+ *
+ * @css-for             all
+ * @tested              ie6,ie7,ie8,chrome_10.x,opera_11.x,firefox_3.6.x,safari_5.x,
+ * @valid               true
+ *
+ * @todo                Consolidate.
+ */
+ 
 .clearfix:after,
 .tabbed:after {
     visibility: hidden;
@@ -122,14 +163,69 @@ margin: 0 0 15px;
 *:first-child+html .clearfix,
 *:first-child+html .tabbed { zoom: 1; } /* IE7 */
 
+/**
+ * HTML elements
+ *
+ * HTML elements
+ *
+ * @author              aalexan1
+ * @project             wm-redesign
+ * @package             wm-redesign-r2
+ * @subpackage          site-consolidation
+ * @version             0.0.1
+ * @lastmodified        03-18-2011 1:40PM
+ *
+ * @css-for             all
+ * @tested              ie6,ie7,ie8,chrome_10.x,opera_11.x,firefox_3.6.x,safari_5.x,
+ * @valid               true
+ *
+ * @todo                Consolidate.
+ */
+
 input { 
     border: 1px #E0DED0 solid; 
     padding: 4px 3px; }
+    
 
+/**
+ * Header
+ *
+ * Header
+ *
+ * @author              aalexan1
+ * @project             wm-redesign
+ * @package             wm-redesign-r2
+ * @subpackage          site-consolidation
+ * @version             0.0.1
+ * @lastmodified        03-18-2011 1:40PM
+ *
+ * @css-for             all
+ * @tested              ie6,ie7,ie8,chrome_10.x,opera_11.x,firefox_3.6.x,safari_5.x,
+ * @valid               true
+ */
+ 
 #header { 
     border-bottom: 10px solid #006A3C; 
     padding: 0 0 1em 0; 
     margin: 0 10px 0 10px; }
+    
+
+/**
+ * Main Copy area
+ *
+ * Main Copy area
+ *
+ * @author              aalexan1
+ * @project             wm-redesign
+ * @package             wm-redesign-r2
+ * @subpackage          site-consolidation
+ * @version             0.0.1
+ * @lastmodified        03-18-2011 1:40PM
+ *
+ * @css-for             all
+ * @tested              ie6,ie7,ie8,chrome_10.x,opera_11.x,firefox_3.6.x,safari_5.x,
+ * @valid               true
+ */
 
 #content h1 { margin-bottom: .5em; margin-top: .2em; }
 #content ul { padding-bottom: 0; }
@@ -137,8 +233,7 @@ input {
     line-height: 1.5em;
     /* The line-height should really be re-casted; the readability of WM.com is lacking */
     padding-bottom: 2em;
-    min-height: 40em;
-    }
+    min-height: 40em; }
 #content p,
 #content h1,
 #content h2,
@@ -157,6 +252,24 @@ input {
 #content table td { padding: 4px; border-bottom: 1px #E0DED0 solid; border-right: 1px #E0DED0 solid; }
 #content caption { font-size: .9em; color: #777; width: 100%; text-align: left; }
 
+
+/**
+ * Left Nav
+ *
+ * Left Nav
+ *
+ * @author              aalexan1
+ * @project             wm-redesign
+ * @package             wm-redesign-r2
+ * @subpackage          site-consolidation
+ * @version             0.0.1
+ * @lastmodified        03-18-2011 1:40PM
+ *
+ * @css-for             all
+ * @tested              ie6,ie7,ie8,chrome_10.x,opera_11.x,firefox_3.6.x,safari_5.x,
+ * @valid               true
+ */
+
 #left_nav { padding-top: 35px; padding-bottom: 35px; }
 #left_nav ul li a { }
 #left_nav ul li { padding: 0; }
@@ -168,6 +281,24 @@ input {
     *margin: 9px 5px 9px 25px !important; }
 #left_nav li ul li ul li a.on { *margin: 9px 5px 9px 14px !important; }
 
+
+/**
+ * Right Rail
+ *
+ * Right Rail
+ *
+ * @author              aalexan1
+ * @project             wm-redesign
+ * @package             wm-redesign-r2
+ * @subpackage          site-consolidation
+ * @version             0.0.1
+ * @lastmodified        03-18-2011 1:40PM
+ *
+ * @css-for             all
+ * @tested              ie6,ie7,ie8,chrome_10.x,opera_11.x,firefox_3.6.x,safari_5.x,
+ * @valid               true
+ */
+ 
 #right_rail { padding-top: 17px; }
 #right_rail h3 { font-size: 12px; color: #222; }
 #right_rail p,
@@ -198,12 +329,35 @@ input {
 .module-contact-info { }
 .module-contact-info dd { margin: 0; padding: 0;  }
 
+
+/**
+ * @todo            Move up to Sections: Utilities and HTML elements
+ */
+ 
 .align-left { float: left; margin: 0 1em 1em 0; }
 .align-right { float: right; margin: 0 0 1em 1em; }
 
 sup { vertical-align: super; font-size: .9em; }
 sub { vertical-align: sub; font-size: .9em; }
 abbr { border-bottom: 1px #222 dotted; }
+
+
+/**
+ * Breadcrumb
+ *
+ * Breadcrumb
+ *
+ * @author              aalexan1
+ * @project             wm-redesign
+ * @package             wm-redesign-r2
+ * @subpackage          site-consolidation
+ * @version             0.0.1
+ * @lastmodified        03-18-2011 1:40PM
+ *
+ * @css-for             all
+ * @tested              ie6,ie7,ie8,chrome_10.x,opera_11.x,firefox_3.6.x,safari_5.x,
+ * @valid               true
+ */
 
 #breadcrumb { margin: 15px 0 5px; }
 #breadcrumb li { display: inline; }
@@ -212,25 +366,135 @@ abbr { border-bottom: 1px #222 dotted; }
 #breadcrumb a:hover { }
 #breadcrumb a:active { }
 
+
+/**
+ * Years List
+ *
+ * A presentation of years
+ *
+ * @author              aalexan1
+ * @project             wm-redesign
+ * @package             wm-redesign-r2
+ * @subpackage          site-consolidation
+ * @version             0.0.1
+ * @lastmodified        03-18-2011 1:40PM
+ *
+ * @css-for             all
+ * @tested              ie6,ie7,ie8,chrome_10.x,opera_11.x,firefox_3.6.x,safari_5.x,
+ * @valid               true
+ */
+
 ul.years { margin: 10px 0 15px !important; padding: 0 !important; font-size: 1.5em !important; }
 ul.years a { text-decoration: none; }
 ul.years li { background: none !important; margin: 0 !important; padding: 0 !important; display: inline; }
 ul.years span.sep { color: #ccc; }
 
+
+/**
+ * Module window overrides
+ *
+ * Module window overrides
+ *
+ * @author              aalexan1
+ * @project             wm-redesign
+ * @package             wm-redesign-r2
+ * @subpackage          site-consolidation
+ * @version             0.0.1
+ * @lastmodified        03-18-2011 1:40PM
+ *
+ * @css-for             all
+ * @tested              ie6,ie7,ie8,chrome_10.x,opera_11.x,firefox_3.6.x,safari_5.x,
+ * @valid               true
+ */
+
 .modal-window-container h2 { font-size: 33px; color: #555; margin: 0 10px 10px 10px; }
 .modal-window-container .modal-window-container-inner { margin: 10px; height: 75%; overflow-y: auto; }
 
 
-/* ======= Module Link List ======= */
+/**
+ * Module Link List
+ *
+ * Desc
+ *
+ * @author              bgarcia8
+ * @project             wm-redesign
+ * @package             wm-redesign-r2
+ * @subpackage          site-consolidation
+ * @version             0.0.1
+ * @lastmodified        03-18-2011 1:40PM
+ *
+ * @css-for             all
+ * @tested              ie6,ie7,ie8,chrome_10.x,opera_11.x,firefox_3.6.x,safari_5.x,
+ * @valid               true
+ */
 
 .module-link-list dt a { color: #000; text-decoration: none; }
 .module-link-list dt a:hover { color: #00693c; text-decoration: none; }
 .module-link-list dd { padding-left: 0 !important; }
 .module-link-list dd p { margin-top: .25em !important; }
 .module-link-list a.more_links { font-weight: bold; }
+ 
+ 
+/**
+ * Module Figure Caption
+ *
+ * Desc
+ *
+ * @author              bgarcia8
+ * @project             wm-redesign
+ * @package             wm-redesign-r2
+ * @subpackage          site-consolidation
+ * @version             0.0.1
+ * @lastmodified        03-18-2011 1:40PM
+ *
+ * @css-for             all
+ * @tested              ie6,ie7,ie8,chrome_10.x,opera_11.x,firefox_3.6.x,safari_5.x,
+ * @valid               true
+ */
+ 
+.module-figure-caption { margin-bottom: 2em; }
+.module-figure-caption p:first-of-type { margin-top: 0 !important; }
+.module-figure-caption .grid_2 img { width: 100px; }
+.module-figure-caption .grid_3 img { width: 160px; }
+.module-figure-caption .grid_4 img { width: 220px; }
+ 
+.figcaption { display: block; margin-top: .5em; line-height: 1.25em; font-size: .9em; color: #777; width: 100%; text-align: left; }
+ 
+ 
+/**
+ * Sub-level headers
+ *
+ * Sub-level headers
+ *
+ * @author              bgarcia8
+ * @project             wm-redesign
+ * @package             wm-redesign-r2
+ * @subpackage          site-consolidation
+ * @version             0.0.1
+ * @lastmodified        03-18-2011 1:40PM
+ *
+ * @css-for             all
+ * @tested              ie6,ie7,ie8,chrome_10.x,opera_11.x,firefox_3.6.x,safari_5.x,
+ * @valid               true
+ */
+ 
+.sub-level h1 { float: left; width: 75% !important; }
+.sub-level a { display: inline-block; float: right; width: 25%; margin: 1.25em 0 0 0; }
 
 
-/* ======= FAQ ======= */
+/**
+ * Cross-browser, print sensitive FAQ
+ *
+ * A model for FAQs.
+ *
+ * @author              aalexan1
+ * @version             0.0.1
+ * @lastmodified        03-18-2011 1:40PM
+ *
+ * @css-for             all
+ * @tested              ie6,ie7,ie8,chrome_10.x,opera_11.x,firefox_3.6.x,safari_5.x,
+ * @valid               true
+ */
 
 .faq-toggle-list { margin: 10px 0 15px !important; }
 
@@ -267,6 +531,24 @@ ul.faq-header-inner { margin: 0 !important; padding: 0 !important; }
 div.faq-header li { padding: 0 !important; margin: 0 !important; background: none !important; }
 #content div.faq-header h3 { float: left; margin: 0; padding: 0; }
 
+
+/**
+ * Print media
+ *
+ * For print media
+ *
+ * @author              aalexan1
+ * @project             wm-redesign
+ * @package             wm-redesign-r2
+ * @subpackage          site-consolidation
+ * @version             0.0.1
+ * @lastmodified        03-18-2011 1:40PM
+ *
+ * @css-for             all
+ * @tested              ie6,ie7,ie8,chrome_10.x,opera_11.x,firefox_3.6.x,safari_5.x,
+ * @valid               true
+ */
+
 @media print {
 
     .faq-header { display: none !important; }
@@ -278,4 +560,19 @@ div.faq-header li { padding: 0 !important; margin: 0 !important; background: non
 }
 
 
-/* ======= Next Section ======= */
+/**
+ * Next section
+ *
+ * Description
+ *
+ * @author              dev
+ * @project             wm-redesign
+ * @package             wm-redesign-r2
+ * @subpackage          site-consolidation
+ * @version             0.0.1
+ * @lastmodified        03-18-2011 1:40PM
+ *
+ * @css-for             all
+ * @tested              all
+ * @valid               true
+ */

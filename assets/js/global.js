@@ -1,8 +1,82 @@
+/**
+ * jQuery Metadata Configuration
+ *
+ * jQuery Metadata Configuration
+ *
+ * @author              aalexander
+ * @project             wm-redesign
+ * @package             wm-redesign-r2
+ * @subpackage          site-consolidation
+ * @version             0.0.1
+ * @lastmodified        03-18-2011 1:40PM
+ * @depends             jquery.metadata
+ *
+ * @js-for              all
+ * @tested              ie6,ie7,ie8,chrome_10.x,opera_11.x,firefox_3.6.x,safari_5.x,
+ */
+
 $.metadata.setType('attr', 'data-settings');
+
+
+/**
+ * jQuery init
+ *
+ * jQuery init
+ *
+ * @author              aalexander
+ * @project             wm-redesign
+ * @package             wm-redesign-r2
+ * @subpackage          site-consolidation
+ * @version             0.0.1
+ * @lastmodified        03-18-2011 1:40PM
+ * @depends             jquery
+ *
+ * @js-for              all
+ * @tested              ie6,ie7,ie8,chrome_10.x,opera_11.x,firefox_3.6.x,safari_5.x,
+ * @valid               true
+ */
 
 $(function() {
     
+/**
+ * jQuery Tabs Configuration
+ *
+ * jQuery Tabs Configuration
+ *
+ * @author              aalexander
+ * @project             wm-redesign
+ * @package             wm-redesign-r2
+ * @subpackage          site-consolidation
+ * @version             0.0.1
+ * @lastmodified        03-18-2011 1:40PM
+ * @depends             jquery.tabs
+ *
+ * @js-for              all
+ * @tested              ie6,ie7,ie8,chrome_10.x,opera_11.x,firefox_3.6.x,safari_5.x,
+ * @valid               true
+ */
+ 
     $.tabs("div.tabs");
+    
+    
+/**
+ * jQuery FAQ Init
+ *
+ * jQuery FAQ Init
+ *
+ * @author              aalexander
+ * @project             wm-redesign
+ * @package             wm-redesign-r2
+ * @subpackage          site-consolidation
+ * @subsubpackage       wm-module-faq
+ * @version             0.0.1
+ * @lastmodified        03-18-2011 1:40PM
+ * @depends             jquery
+ *
+ * @js-for              all
+ * @tested              ie6,ie7,ie8,chrome_10.x,opera_11.x,firefox_3.6.x,safari_5.x,
+ * @valid               true
+ */
 
     $("dl[class*='faq']").each(function(e) {
         var $self = $(this),
@@ -16,6 +90,26 @@ $(function() {
         });
 
     });
+    
+
+/**
+ * jQuery FAQ Toggle Next
+ *
+ * jQuery FAQ Init
+ *
+ * @author              aalexander
+ * @project             wm-redesign
+ * @package             wm-redesign-r2
+ * @subpackage          site-consolidation
+ * @subsubpackage       wm-module-faq
+ * @version             0.0.1
+ * @lastmodified        03-18-2011 1:40PM
+ * @depends             jquery
+ *
+ * @js-for              all
+ * @tested              ie6,ie7,ie8,chrome_10.x,opera_11.x,firefox_3.6.x,safari_5.x,
+ * @valid               true
+ */
     
     $(".toggle-next").each(function(e) {
         var that = $(this),
