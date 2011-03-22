@@ -86,8 +86,7 @@ $(function() {
             grid = grid[1];
             
         $self.find("dd").addClass(grid+" alpha").css({
-            margin: "0 !important",
-            float: "none !important"
+            margin: "0 !important"
         });
 
     });
