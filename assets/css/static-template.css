@@ -246,7 +246,7 @@ input {
 #content ol li { }
 #content dl { margin: 1em 0 .5em; }
 #content dt { font-weight: bold; }
-#content dd { padding-left: 1em; }
+/* #content dd { padding-left: 1em; } */
 #content table { position: relative; margin: 1em 0 2.5em; width: 100%; border: 1px #E0DED0 solid; }
 #content table th { background: #E0DED0; padding: 4px; }
 #content table td { padding: 4px; border-bottom: 1px #E0DED0 solid; border-right: 1px #E0DED0 solid; }
